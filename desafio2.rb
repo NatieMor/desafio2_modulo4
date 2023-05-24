@@ -1,24 +1,24 @@
-
-=begin
 #requerieminto 1
+puts "requerieminto 1"
 i= 0
 while i <20 do 
     puts "#{i+2}" 
     i+= 2 
 end
-=end
+puts
+puts
 
-=begin
 #requerimeinto 2
+puts "requerieminto 2"
 i=-1
 while i < 19 do 
     puts "#{i+2}" 
 i+=2
 end
-=end
+puts
 
-=begin
 #requeriemito 3
+puts "requerieminto 3"
 i= 0
 while i < 10 do 
     tabla= i
@@ -28,21 +28,15 @@ while i < 10 do
     puts
     i+= 1
 end 
-=end
-
-
-cantidad = ARGV[0].to_i
+puts
 puts
 
-cantidad.times do |i|
-    # i = 0, 1, 2, 3, 4, 5, 6
-     i.times do |j|
-        print "   " * cantidad 
-        print " * " * cantidad /2
-        print "\n"
-    end
-    
+#requerimiento 4, se escogio * por que se ve mejor esteticamente la piramide
+n = ARGV[0].to_i
+puts "requerieminto 4"
+c = "*"
+valor = c
+for i in 1..n
+    puts " " * (n - i) + valor
+    valor += c * 2
 end
-  
-
-
